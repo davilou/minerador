@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1"><title>Minerador</title>
+<link rel="stylesheet" href="/static/estilo.css">
+</head>
+<body>
+<header class="topo">
+  <div class="marca">
+    <div class="logo">⛏</div>
+    <div>
+      <div class="titulo">Minerador <span class="pilula" id="contador">0 canais</span></div>
+      <div class="sub">Canais novos com muitas views e poucos vídeos</div>
+    </div>
+  </div>
+  <div class="botoes">
+    <button class="secundario" id="btn-atualizar" title="Relê inscritos e views de toda a base (≈1 unidade a cada 50 itens)">↻ Atualizar números</button>
+    <button class="secundario" id="btn-descobrir" title="Termos novos a partir dos títulos dos aprovados e do autocompletar do YouTube">🧭 Descobrir nichos</button>
+    <button id="btn-minerar">+ Nova mineração</button>
+  </div>
+</header>
+
+<nav class="abas" id="abas">
+  <button data-aba="explodindo">🔥 Explodindo Agora</button>
+  <button data-aba="subindo">↗ Subindo Rápido</button>
+  <button data-aba="outliers">⚡ Outliers</button>
+  <button data-aba="tracao">〰 Tração Recente</button>
+  <button data-aba="novos">✦ Canais Novos</button>
+  <button data-aba="virais">🚀 Virais de Pequenos</button>
+  <button data-aba="favoritos">♡ Favoritos</button>
+  <button data-aba="todos">▦ Todos</button>
+</nav>
+<p class="regra" id="regra"></p>
+
+<section class="filtros">
+  <input id="f-busca" type="search" placeholder="Buscar por nome, @handle, termo ou título de vídeo…">
+  <select id="f-idioma"><option value="">Idioma</option></select>
+  <select id="f-categoria"><option value="">Categoria</option></select>
+  <select id="f-formato">
+    <option value="">Formato</option><option value="longo">Longos</option>
+    <option value="shorts">Shorts</option><option value="misto">Mistos</option>
+  </select>
+  <select id="f-inscritos">
+    <option value="">Inscritos</option><option value="0-1000">até 1 mil</option>
+    <option value="0-10000">até 10 mil</option><option value="0-100000">até 100 mil</option>
+    <option value="100000-">mais de 100 mil</option>
+  </select>
+  <select id="f-views">
+    <option value="">Views</option><option value="100000-">100 mil+</option>
+    <option value="1000000-">1 mi+</option><option value="10000000-">10 mi+</option>
+  </select>
+  <select id="f-videos">
+    <option value="">Vídeos</option><option value="0-5">até 5</option>
+    <option value="0-15">até 15</option><option value="0-30">até 30</option>
+  </select>
+  <select id="f-ordem">
+    <option value="views_mes">Ordenar: views/mês</option>
+    <option value="subida_dia">Ordenar: subida/dia</option>
+    <option value="views_total">Ordenar: views total</option>
+    <option value="tracao_30d">Ordenar: views 30 dias</option>
+    <option value="views_por_video">Ordenar: views/vídeo</option>
+    <option value="inscritos">Ordenar: inscritos</option>
+    <option value="dias_postando_asc">Ordenar: mais novos</option>
+    <option value="adicionado">Ordenar: adicionados agora</option>
+  </select>
+  <select id="f-ordem-virais" hidden>
+    <option value="razao">Ordenar: views ÷ inscritos</option>
+    <option value="views">Ordenar: views</option>
+    <option value="publicado">Ordenar: mais recentes</option>
+    <option value="adicionado">Ordenar: adicionados agora</option>
+  </select>
+</section>
+
+<main class="grade" id="grade"></main>
+
+<dialog id="modal">
+  <div class="modal-topo"><h2>Nova mineração</h2><button class="fechar" id="modal-fechar" aria-label="Fechar">✕</button></div>
+  <div class="modal-corpo">
+    <form id="form">
+      <div class="modos">
+        <button type="button" class="modo ativo" data-modo="termos">Por termos</button>
+        <button type="button" class="modo" data-modo="varredura">Varredura geral</button>
+      </div>
+      <div id="modo-termos">
+        <label for="termos">Termos de busca (um por linha) — prefira sub-nicho: termo amplo só traz canal grande</label>
+        <textarea id="termos" placeholder="carro usado cuidado&#10;golpe oficina mecânica"></textarea>
+      </div>
+      <div id="modo-varredura" hidden>
+        <label>Idiomas</label>
+        <div class="checks" id="vr-idiomas"></div>
+        <label>Categorias <a href="#" id="vr-todas">todas</a> · <a href="#" id="vr-nenhuma">nenhuma</a></label>
+        <div class="checks categorias" id="vr-categorias"></div>
+        <label for="vr-candidatos">Candidatos a testar por idioma (🧭 Descobrir nichos) · 0 = só as sementes</label>
+        <input id="vr-candidatos" type="number" value="15" min="0" max="100">
+        <p class="estimativa" id="vr-estimativa"></p>
+      </div>
+      <div class="campos">
+        <div id="campo-mercado"><label for="mercado">Mercado</label>
+          <select id="mercado">
+            <option value="pt|BR">Português · BR</option><option value="en|US">Inglês · US</option>
+            <option value="de|DE">Alemão · DE</option><option value="es|ES">Espanhol · ES</option>
+            <option value="es|MX">Espanhol · MX</option><option value="fr|FR">Francês · FR</option>
+          </select></div>
+        <div><label for="periodo">Vídeos publicados</label>
+          <select id="periodo">
+            <option value="12m_views">12 meses · + vistos</option><option value="12m">12 meses · relevância</option>
+            <option value="30d_views">30 dias · + vistos</option><option value="30d">30 dias · relevância</option>
+            <option value="7d_views">7 dias · + vistos</option><option value="7d">7 dias · relevância</option>
+            <option value="24h_views">24 horas · + vistos</option><option value="24h">24 horas · relevância</option>
+            <option value="qualquer">Qualquer data</option>
+          </select></div>
+        <div><label for="max_videos">Máx. vídeos</label><input id="max_videos" type="number" value="30" min="1" max="200"></div>
+        <div><label for="idade_max_dias">Idade máx. (dias)</label><input id="idade_max_dias" type="number" value="180" min="1"></div>
+        <div><label for="min_views">Mín. views do canal</label><input id="min_views" type="number" value="100000" min="0" step="10000"></div>
+        <div><label for="por_termo">Resultados/termo</label><input id="por_termo" type="number" value="100" min="10" max="300"></div>
+      </div>
+      <button id="btn-rodar">Minerar</button>
+      <div class="progresso" id="progresso" hidden><span id="progresso-texto"></span><div class="barra"><div id="progresso-barra"></div></div></div>
+    </form>
+    <div class="historico"><h3>Histórico</h3><div id="historico"></div></div>
+  </div>
+</dialog>
+
+<dialog id="modal-desc" class="largo">
+  <div class="modal-topo"><h2>Descobrir nichos</h2><button class="fechar" id="modal-desc-fechar" aria-label="Fechar">✕</button></div>
+  <div class="desc-corpo">
+    <p class="regra">Candidatos nascem dos títulos que se repetem entre os canais aprovados e do autocompletar dos termos que mais rendem.
+      A varredura testa uma fatia deles; quem aprova canal fica aqui para promover, quem falha em 2 buscas é descartado sozinho.</p>
+    <div class="desc-acoes">
+      <div class="modos" id="d-vistas"><button type="button" class="modo ativo" data-vista="candidatos">Candidatos</button>
+        <button type="button" class="modo" data-vista="placar">Placar dos termos</button></div>
+      <select id="d-idioma"><option value="">Todos os idiomas</option><option>pt</option><option>en</option><option>es</option><option>de</option></select>
+      <label class="check" id="d-filtro-ruins" hidden><input type="checkbox" id="d-ruins">só os que não rendem</label>
+      <button id="btn-gerar">Gerar candidatos</button>
+    </div>
+    <div id="d-lista"></div>
+  </div>
+</dialog>
+
+<div class="aviso" id="aviso" hidden></div>
+
+<script type="module" src="/static/app.js"></script>
+</body>
+</html>

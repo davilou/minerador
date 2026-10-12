@@ -1,0 +1,18 @@
+[project]
+name = "minerador"
+version = "0.1.0"
+requires-python = ">=3.13"
+dependencies = ["fastapi", "uvicorn", "yt-dlp", "google-api-python-client", "pywebview"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
+
+[tool.mypy]
+strict = true
+files = ["."]
+exclude = ['^tests/', '^\.venv/']
+
+[[tool.mypy.overrides]]
+module = ["yt_dlp.*", "googleapiclient.*", "webview.*"]
+ignore_missing_imports = true

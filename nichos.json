@@ -1,0 +1,191 @@
+{
+  "historia": {
+    "nome": "História",
+    "pt": ["história antiga documentário", "império romano história", "segunda guerra mundial história", "história do brasil curiosidades", "civilizações perdidas"],
+    "en": ["ancient history documentary", "roman empire history", "medieval history explained", "world war 2 history documentary", "lost civilizations", "alexander the great", "changed everything", "entire history", "ancient rome documentary history channel", "ai generated history story animated"],
+    "es": ["historia antigua documental", "imperio romano historia", "segunda guerra mundial documental", "civilizaciones perdidas"],
+    "de": ["geschichte doku", "römisches reich geschichte", "zweiter weltkrieg doku", "mittelalter geschichte"]
+  },
+  "misterio": {
+    "nome": "Mistério e Paranormal",
+    "pt": ["mistérios não resolvidos", "casos paranormais reais", "lendas urbanas brasileiras", "teorias da conspiração", "mistérios do oceano", "misterios do oceano pacifico", "mistérios do oceano profundo"],
+    "en": ["unsolved mysteries", "paranormal stories real", "creepy stories", "conspiracy theories explained", "ocean mysteries"],
+    "es": ["misterios sin resolver", "historias paranormales reales", "leyendas urbanas", "misterios del océano"],
+    "de": ["ungelöste mysterien", "paranormale geschichten", "gruselige geschichten", "verschwörungstheorien"]
+  },
+  "true_crime": {
+    "nome": "True Crime",
+    "pt": ["true crime caso real", "casos criminais brasileiros", "serial killer história", "crimes que chocaram o brasil", "investigação criminal caso"],
+    "en": ["true crime documentary", "serial killer documentary", "cold case solved", "true crime stories", "interrogation analysis", "documentary true crime", "serial killer documentary true crime", "serial killer documentary no ads", "serial killer documentary real crime", "true crime documentary serial killers", "true crime documentary full episodes", "true crime documentary murders"],
+    "es": ["true crime en español", "casos criminales reales", "asesinos seriales historia", "casos sin resolver"],
+    "de": ["true crime deutsch", "kriminalfälle deutschland", "serienmörder doku", "ungelöste kriminalfälle"]
+  },
+  "religiao": {
+    "nome": "Religião e Bíblia",
+    "pt": ["histórias bíblicas", "oração poderosa", "mistérios da bíblia", "mensagem de deus para você", "salmos para dormir"],
+    "en": ["bible stories explained", "powerful prayer", "bible mysteries", "god message for you today", "christian motivation"],
+    "es": ["historias bíblicas", "oración poderosa", "misterios de la biblia", "mensaje de dios para ti"],
+    "de": ["biblische geschichten", "gebet", "geheimnisse der bibel", "christliche botschaft"]
+  },
+  "relacionamentos": {
+    "nome": "Psicologia e Relacionamentos",
+    "pt": ["psicologia feminina", "sinais que ela gosta de você", "dependência emocional", "narcisista relacionamento", "psicologia do comportamento humano", "carl jung", "mulher se sentir", "tarde demais", "psicologia revela", "mulheres costumam", "linguagem corporal", "está apaixonada", "atração feminina", "psicologia da atração", "mulheres maduras", "homem mais velho", "psicologia feminina atração", "psicologia feminina como entender", "psicologia feminina sedução"],
+    "en": ["female psychology", "signs she likes you", "narcissist relationship", "dark psychology", "attachment style explained", "older men", "female psychology attraction", "female psychology facts", "female psychology for men"],
+    "es": ["psicología femenina", "señales de que le gustas", "relación con un narcisista", "psicología oscura"],
+    "de": ["weibliche psychologie", "narzisstische beziehung", "psychologie fakten", "dunkle psychologie"]
+  },
+  "autoajuda": {
+    "nome": "Autoajuda e Estoicismo",
+    "pt": ["estoicismo", "motivação homens", "disciplina e foco", "lições de vida", "sabedoria dos filósofos"],
+    "en": ["stoicism", "stoic philosophy lessons", "self improvement men", "discipline motivation", "life lessons old man", "ai movie", "everything will come"],
+    "es": ["estoicismo", "lecciones de vida", "motivación disciplina", "filosofía estoica"],
+    "de": ["stoizismus", "lebensweisheiten", "motivation disziplin", "philosophie lebenslektionen"]
+  },
+  "financas": {
+    "nome": "Finanças e Dinheiro",
+    "pt": ["como sair das dívidas", "educação financeira", "investimentos para iniciantes", "como guardar dinheiro ganhando pouco", "psicologia do dinheiro"],
+    "en": ["personal finance tips", "how to get out of debt", "investing for beginners", "money psychology", "frugal living tips"],
+    "es": ["finanzas personales", "cómo salir de deudas", "invertir para principiantes", "ahorrar dinero"],
+    "de": ["finanzen tipps", "geld sparen tipps", "investieren für anfänger", "schulden loswerden"]
+  },
+  "negocios": {
+    "nome": "Negócios e Renda Extra",
+    "pt": ["renda extra em casa", "ideias de negócio", "como ganhar dinheiro na internet", "empreendedorismo histórias", "histórias de bilionários", "historias de bilionários que começaram do zero"],
+    "en": ["side hustle ideas", "business ideas", "make money online", "billionaire stories", "how companies make money", "disguised as homeless", "poor girl", "billionaire ceo", "billionaire stories pregnant wife", "billionaire stories you won't believe", "billionaire stories success"],
+    "es": ["ideas de negocio", "ganar dinero por internet", "historias de millonarios", "emprendimiento"],
+    "de": ["geschäftsideen", "online geld verdienen", "nebenverdienst ideen", "milliardär geschichte"]
+  },
+  "saude": {
+    "nome": "Saúde e Emagrecimento",
+    "pt": ["como emagrecer rápido", "alimentos que fazem mal", "saúde depois dos 50", "remédio caseiro", "jejum intermitente", "emagrecer com saude depois dos 40", "como emagrecer com saude depois dos 50 anos", "saude depois dos 50 anos"],
+    "en": ["weight loss tips", "foods you should never eat", "health tips over 50", "intermittent fasting", "doctor explains", "plain water", "health tips for women over 50"],
+    "es": ["cómo bajar de peso", "alimentos saludables", "salud después de los 50", "remedios caseros"],
+    "de": ["abnehmen tipps", "gesunde ernährung", "gesundheit ab 50", "hausmittel"]
+  },
+  "terceira_idade": {
+    "nome": "Terceira Idade",
+    "pt": ["aposentados dicas", "idosos saúde", "conselhos de idosos", "vida depois dos 60", "enquanto você dorme", "médico explica"],
+    "en": ["seniors over 60", "retirement tips", "advice from elderly", "life after 70", "eat these foods"],
+    "es": ["consejos para jubilados", "adultos mayores salud", "vida después de los 60", "vida después de los 60’s/ tareas de limpieza en el hogar", "sigues con vida despues de los 60", "la vida despues de los 60 años", "adultos mayores seo cv"],
+    "de": ["rentner tipps", "senioren gesundheit", "leben ab 60"]
+  },
+  "culinaria": {
+    "nome": "Receitas e Culinária",
+    "pt": ["receitas fáceis", "receita fit", "comida de vó", "receita sem forno", "sobremesa fácil"],
+    "en": ["easy recipes", "healthy recipes", "grandma recipes", "cooking asmr", "no bake dessert"],
+    "es": ["recetas fáciles", "recetas saludables", "recetas de la abuela", "postres fáciles"],
+    "de": ["einfache rezepte", "gesunde rezepte", "omas rezepte", "schnelle rezepte"]
+  },
+  "carros": {
+    "nome": "Carros e Mecânica",
+    "pt": ["carro usado cuidado", "mecânica automotiva dicas", "carros antigos história", "golpe oficina mecânica", "curiosidades sobre carros"],
+    "en": ["car restoration", "car mechanic tips", "car history documentary", "used car buying tips", "supercar stories", "real reason"],
+    "es": ["mecánica automotriz", "autos clásicos", "consejos para comprar auto usado", "restauración de autos"],
+    "de": ["auto restaurierung", "kfz mechaniker tipps", "oldtimer geschichte", "gebrauchtwagen tipps"]
+  },
+  "tecnologia": {
+    "nome": "Tecnologia e IA",
+    "pt": ["inteligência artificial notícias", "ferramentas de ia", "tecnologia do futuro", "curiosidades tecnologia"],
+    "en": ["ai news", "ai tools explained", "future technology", "tech explained", "how it works technology"],
+    "es": ["inteligencia artificial", "herramientas de ia", "tecnología del futuro"],
+    "de": ["künstliche intelligenz", "ki tools", "zukunftstechnologie"]
+  },
+  "ciencia": {
+    "nome": "Ciência e Espaço",
+    "pt": ["curiosidades do universo", "documentário espaço", "ciência explicada", "buracos negros", "corpo humano curiosidades", "universo para dormir", "documentário do espaço para dormir", "viagem interestelar", "galáxias documentário"],
+    "en": ["space documentary", "universe explained", "black holes explained", "science facts", "human body facts", "space documentary to fall asleep", "universe documentary for sleep", "interstellar travel explained", "galaxies documentary"],
+    "es": ["documental del universo", "curiosidades del espacio", "ciencia explicada", "agujeros negros", "documental del universo para dormir", "viajes interestelares", "galaxias documental"],
+    "de": ["weltall doku", "universum erklärt", "wissenschaft fakten", "schwarze löcher", "weltall doku zum einschlafen", "interstellare reisen", "galaxien doku"]
+  },
+  "megaprojetos": {
+    "nome": "Engenharia e Megaprojetos",
+    "pt": ["megaconstruções", "engenharia impressionante", "maiores obras do mundo", "como foi construído", "como foi construído as pirâmides do egito", "como foi construído o cristo redentor", "como foi construído o templo de salomão"],
+    "en": ["megaprojects", "engineering marvels", "how it was built", "biggest construction projects"],
+    "es": ["megaconstrucciones", "ingeniería impresionante", "cómo se construyó"],
+    "de": ["megabauwerke", "ingenieurskunst", "wie es gebaut wurde"]
+  },
+  "natureza": {
+    "nome": "Natureza e Animais",
+    "pt": ["animais curiosidades", "documentário natureza", "animais selvagens", "resgate de animais", "animais mais perigosos", "documentário completo"],
+    "en": ["animal facts", "wildlife documentary", "animal rescue", "most dangerous animals", "nature documentary"],
+    "es": ["documental de animales", "animales salvajes", "rescate de animales", "curiosidades de animales"],
+    "de": ["tier doku", "wilde tiere", "tierrettung", "natur doku"]
+  },
+  "curiosidades": {
+    "nome": "Curiosidades e Top Listas",
+    "pt": ["curiosidades incríveis", "top 10 coisas", "fatos que você não sabia", "coisas mais raras do mundo", "lugares proibidos"],
+    "en": ["top 10 facts", "things you didnt know", "rarest things in the world", "forbidden places", "most amazing facts"],
+    "es": ["curiosidades increíbles", "top 10 cosas", "datos que no sabías", "lugares prohibidos"],
+    "de": ["top 10 fakten", "unglaubliche fakten", "verbotene orte", "seltenste dinge der welt"]
+  },
+  "filmes": {
+    "nome": "Filmes e Séries (resumos)",
+    "pt": ["resumo de filme", "filme explicado", "resumo de série", "filmes de terror resumo"],
+    "en": ["movie recap", "movie explained", "series recap", "horror movie recap", "movie plot explained"],
+    "es": ["resumen de película", "película explicada", "resumen de serie"],
+    "de": ["film zusammenfassung", "film erklärt", "serie zusammenfassung"]
+  },
+  "historias_narradas": {
+    "nome": "Histórias Narradas",
+    "pt": ["histórias reais narradas", "histórias de vingança", "contos de terror", "histórias do reddit", "histórias emocionantes"],
+    "en": ["reddit stories", "revenge stories", "scary stories narrated", "true stories narrated", "aita stories"],
+    "es": ["historias reales narradas", "historias de venganza", "cuentos de terror", "historias de reddit"],
+    "de": ["wahre geschichten", "rache geschichten", "gruselgeschichten", "reddit geschichten deutsch"]
+  },
+  "musica_ambiente": {
+    "nome": "Música e Ambiente",
+    "pt": ["música para dormir", "música relaxante", "lofi para estudar", "sons da natureza para dormir"],
+    "en": ["sleep music", "relaxing music", "lofi study music", "ambient music", "rain sounds for sleeping"],
+    "es": ["música para dormir", "música relajante", "sonidos de lluvia"],
+    "de": ["musik zum einschlafen", "entspannungsmusik", "regengeräusche"]
+  },
+  "infantil": {
+    "nome": "Infantil",
+    "pt": ["desenho infantil", "músicas infantis", "histórias para crianças", "brinquedos infantil", "música infantil", "desenho infantil antigo", "desenho infantil filme completo", "desenho infantil educativo"],
+    "en": ["kids cartoon", "nursery rhymes", "bedtime stories for kids", "kids learning videos"],
+    "es": ["canciones infantiles", "cuentos para niños", "dibujos animados infantiles"],
+    "de": ["kinderlieder", "gute nacht geschichten", "kinder zeichentrick"]
+  },
+  "games": {
+    "nome": "Games",
+    "pt": ["minecraft", "roblox", "gameplay terror", "curiosidades de games", "free fire"],
+    "en": ["minecraft", "roblox", "horror game", "gaming facts", "fortnite"],
+    "es": ["minecraft", "roblox", "juegos de terror"],
+    "de": ["minecraft deutsch", "roblox deutsch", "horror spiel"]
+  },
+  "esportes": {
+    "nome": "Esportes",
+    "pt": ["futebol histórias", "curiosidades do futebol", "lances inacreditáveis", "jogadores esquecidos"],
+    "en": ["football stories", "soccer documentary", "nba stories", "sports moments"],
+    "es": ["historias de fútbol", "futbolistas olvidados", "momentos del deporte"],
+    "de": ["fußball geschichten", "fußball doku", "sport momente"]
+  },
+  "noticias": {
+    "nome": "Política e Notícias",
+    "pt": ["notícias do dia", "geopolítica explicada", "política brasileira", "economia explicada"],
+    "en": ["geopolitics explained", "news today", "us politics", "economy explained", "allah tala"],
+    "es": ["noticias de hoy", "geopolítica explicada", "política actual"],
+    "de": ["nachrichten heute", "geopolitik erklärt", "wirtschaft erklärt"]
+  },
+  "guerra": {
+    "nome": "Guerra e Militar",
+    "pt": ["armas militares", "forças especiais", "guerras modernas", "aviões de guerra"],
+    "en": ["military documentary", "special forces", "fighter jets", "modern warfare explained"],
+    "es": ["documental militar", "fuerzas especiales", "aviones de guerra"],
+    "de": ["militär doku", "spezialeinheiten", "kampfjets"]
+  },
+  "viagem": {
+    "nome": "Viagem e Países",
+    "pt": ["países mais estranhos", "morar no exterior", "lugares incríveis do mundo", "cidades abandonadas"],
+    "en": ["weirdest countries", "abandoned places", "amazing places on earth", "life in north korea"],
+    "es": ["países más extraños", "lugares abandonados", "lugares increíbles del mundo"],
+    "de": ["verlassene orte", "seltsamste länder", "unglaubliche orte der welt"]
+  },
+  "diy": {
+    "nome": "Casa, DIY e Restauração",
+    "pt": ["restauração", "faça você mesmo", "reforma de casa", "limpeza satisfatória"],
+    "en": ["restoration", "diy projects", "satisfying cleaning", "tiny house build", "off grid living", "back to life"],
+    "es": ["restauración", "hazlo tú mismo", "limpieza satisfactoria"],
+    "de": ["restaurierung", "diy projekte", "tiny house"]
+  }
+}
